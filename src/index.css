@@ -1,0 +1,15 @@
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/700.css";
+
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.big-responsive-text {
+    @apply text-2xl md:text-4xl;
+}
+.medium-responsive-text {
+    @apply text-xl md:text-2xl;
+}
