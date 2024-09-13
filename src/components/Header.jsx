@@ -1,8 +1,6 @@
 import bgImage from '../assets/bg.png';
 import logoImage from '../assets/logo.png';
 
-const bgClassName = `h-screen bg-[url(${bgImage})] bg-no-repeat bg-cover`;
-
 const Header = () => {
     return (
         <div className="h-screen bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bgImage})` }}>

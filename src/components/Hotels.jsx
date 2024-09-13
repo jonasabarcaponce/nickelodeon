@@ -1,5 +1,20 @@
-import bgImage from '../assets/bg.png';
-import logoImage from '../assets/logo.png';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation, Autoplay } from 'swiper/modules';
+
+import image1 from '../assets/gallery/slider-1.png';
+import image2 from '../assets/gallery/slider-2.png';
+import image3 from '../assets/gallery/slider-3.png';
+
+const imagesWithTitles = [
+    { src: image1, title: 'Habitación con piscina' },
+    { src: image2, title: 'Estilo: Bob Esponja' },
+    { src: image3, title: 'Estilo: Tortugas Ninja' },
+];
 
 const Hotels = () => {
     return (
@@ -10,6 +25,37 @@ const Hotels = () => {
                     <p className='medium-responsive-text'>Suites con balcón, piscina infinita, y una decoración única.</p>
                 </div>
             </div>
+            <Swiper
+
+                spaceBetween={30}
+                slidesPerView={3}
+                loop={true}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                }}
+                pagination={{ clickable: true }}
+                navigation={true} modules={[Navigation,Autoplay]}
+                className='max-w-[986px] mx-auto px-5'>
+                    
+                {imagesWithTitles.map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={item.src} alt={`Gallery item ${index + 1}`} className="w-full h-auto" />
+                        <h1 className='small-responsive-text font-bold mt-4'>{item.title}</h1>
+                    </SwiperSlide>
+                ))}
+
+            </Swiper>
         </div>
     );
 };

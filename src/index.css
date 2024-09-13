@@ -13,3 +13,11 @@
 .medium-responsive-text {
     @apply text-xl md:text-2xl;
 }
+.small-responsive-text {
+    @apply text-lg md:text-xl;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    @apply text-orange-500;    
+}
