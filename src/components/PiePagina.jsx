@@ -1,11 +1,17 @@
+import logoImage from '../assets/logo.png';
+
 const PiePagina = () => {
     return (
         <div className="bg-white text-black">
-            <div className="flex items-center max-w-[986px] mx-auto px-5 py-20 font-bold">
-                <div>
-                    <h1 className='mb-3 big-responsive-text text-orange-500'>Pie Pagina</h1>
-                    <p className='medium-responsive-text'>pie pagina</p>
-                </div>
+            <div className="max-w-[986px] mx-auto py-10 px-5">
+                <nav className="flex justify-between items-center">
+                    <div>
+                        <img src={logoImage} className='w-6/12 md:w-8/12' alt="Logo" />
+                    </div>
+                    <div>
+                        <p className='small-responsive-text'>© 2021 Todos los derechos reservados</p>
+                    </div>
+                </nav>
             </div>
         </div>
     );
