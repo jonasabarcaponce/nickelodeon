@@ -1,14 +1,14 @@
-const Experiencias = () => {
+const TodoIncluido = () => {
     return (
         <div className="bg-white text-black">
             <div className="flex items-center max-w-[986px] mx-auto px-5 py-20 font-bold">
                 <div>
-                    <h1 className='mb-3 big-responsive-text text-orange-500'>Experiencias</h1>
-                    <p className='medium-responsive-text'>experiencias</p>
+                    <h1 className='mb-3 big-responsive-text text-orange-500'>Todo Incluido</h1>
+                    <p className='medium-responsive-text'>Todo Incluido</p>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Experiencias;
+export default TodoIncluido;
