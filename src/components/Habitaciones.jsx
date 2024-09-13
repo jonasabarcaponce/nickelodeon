@@ -5,9 +5,9 @@ import 'swiper/css/navigation';
 
 import { Navigation, Autoplay } from 'swiper/modules';
 
-import image1 from '../assets/gallery/slider-1.png';
-import image2 from '../assets/gallery/slider-2.png';
-import image3 from '../assets/gallery/slider-3.png';
+import image1 from '../assets/habitaciones/slider-1.png';
+import image2 from '../assets/habitaciones/slider-2.png';
+import image3 from '../assets/habitaciones/slider-3.png';
 
 const imagesWithTitles = [
     { src: image1, title: 'Habitación con piscina' },
