@@ -57,7 +57,7 @@ const Hotels = () => {
             </Swiper>
             <div className="flex items-center max-w-[986px] mx-auto px-5 py-20 font-bold">
                 <div>
-                    <a href="#" className='bg-orange-500 small-responsive-text uppercase py-2 px-10 text-white flex items-center justify-center rounded-2xl'>
+                    <a href="tel:+529842359910" className='bg-orange-500 small-responsive-text uppercase py-2 px-10 text-white flex items-center justify-center rounded-2xl'>
                         Cotizar    
                     </a>
                 </div>
