@@ -1,12 +1,12 @@
 import './App.css'
-import Header from './components/Header'
-import Hotels from './components/Hotels'
+import Cabecera from './components/Cabecera'
+import Habitaciones from './components/Habitaciones'
 
 function App() {
   return (
     <div className='font-montserrat'>
-      <Header></Header>
-      <Hotels></Hotels>
+      <Cabecera></Cabecera>
+      <Habitaciones></Habitaciones>
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -56,6 +55,13 @@ const Hotels = () => {
                 ))}
 
             </Swiper>
+            <div className="flex items-center max-w-[986px] mx-auto px-5 py-20 font-bold">
+                <div>
+                    <a href="#" className='bg-orange-500 small-responsive-text uppercase py-2 px-10 text-white flex items-center justify-center rounded-2xl'>
+                        Cotizar    
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };
