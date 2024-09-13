@@ -3,8 +3,8 @@ import image from '../assets/todo-incluido.png';
 const TodoIncluido = () => {
     return (
         <div className="bg-black text-white relative">
-            <div className="grid grid-cols-2 gap-4 max-w-[986px] mx-auto px-5 py-20">
-                <div className="col-span-1 font-bold flex flex-col justify-center">
+            <div className="grid md:grid-cols-2 gap-4 max-w-[986px] mx-auto px-5 py-20">
+                <div className="md:col-span-1 font-bold flex flex-col justify-center">
                     <div className='text-center space-y-8'>
                         <h1 className='mb-3 big-responsive-text text-orange-500'>Todo Incluido</h1>
                         <p className='small-responsive-text'>
@@ -19,8 +19,8 @@ const TodoIncluido = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-span-1">
-                    <img src={image} />
+                <div className="md:col-span-1">
+                    <img src={image} className="w-full" />
                 </div>
             </div>
         </div>
