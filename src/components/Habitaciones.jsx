@@ -45,7 +45,7 @@ const Hotels = () => {
                 }}
                 pagination={{ clickable: true }}
                 navigation={true} modules={[Navigation,Autoplay]}
-                className='max-w-[986px] mx-auto px-5'>
+                className='max-w-[986px] mx-auto px-5 first-slider'>
                     
                 {imagesWithTitles.map((item, index) => (
                     <SwiperSlide key={index}>

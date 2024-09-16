@@ -44,7 +44,7 @@ const Galeria = () => {
                 pagination={{ clickable: true }}
                 navigation={true} 
                 modules={[Navigation,Autoplay]}
-                className='max-w-[986px] mx-auto px-5'>
+                className='max-w-[986px] mx-auto px-5 second-slider'>
                 {imagesWithTitles.map((item, index) => (
                     <SwiperSlide key={index}>
                         <img src={item.src} alt={item.title} title={item.title} className="w-full h-auto" />
