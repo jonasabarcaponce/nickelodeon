@@ -23,3 +23,20 @@
 .second-slider [class^="swiper-button"] {
     @apply text-white; 
 }
+
+
+.accordion {
+    @apply border-none;
+}
+.accordion__item + .accordion__item {
+    @apply border-none;
+}
+.accordion__item {
+    @apply mb-5 bg-white rounded-2xl text-black;
+}
+.accordion__button {
+    @apply medium-responsive-text bg-transparent text-black font-bold p-4 rounded-lg cursor-pointer;
+}
+.accordion__panel {
+    @apply small-responsive-text bg-transparent;
+}

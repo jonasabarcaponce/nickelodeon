@@ -9,7 +9,7 @@ const Header = () => {
                     <div>
                         <img src={logoImage} className='w-6/12 md:w-8/12' alt="Logo" />
                     </div>
-                    <a href="#" className='bg-orange-500 w-12 h-12 text-2xl text-white flex items-center justify-center rounded-full'>
+                    <a href="#" className='bg-orange-500 text-2xl text-white flex items-center justify-center rounded-full min-w-12 w-12 h-12'>
                         <i className='fab fa-whatsapp'></i>
                     </a>
                 </nav>
