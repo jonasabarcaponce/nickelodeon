@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        nickelodeonGreen: '#90c858', 
+      }
     },
   },
   plugins: [],

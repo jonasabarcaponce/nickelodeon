@@ -1,6 +1,6 @@
 const FormatoContacto = () => {
     return (
-        <div className="bg-white text-black py-20">
+        <div className="bg-white text-black py-20" id="cotizar">
             <div className="flex items-center max-w-[986px] mx-auto px-5 font-bold">
                 <div>
                     <h1 className='mb-3 big-responsive-text text-orange-500'>Tus vacaciones comienzan aquí.</h1>
