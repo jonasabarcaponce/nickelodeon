@@ -8,11 +8,15 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import image1 from '../assets/habitaciones/slider-1.png';
 import image2 from '../assets/habitaciones/slider-2.png';
 import image3 from '../assets/habitaciones/slider-3.png';
+import image4 from '../assets/habitaciones/slider-4.png';
+import image5 from '../assets/habitaciones/slider-5.png';
 
 const imagesWithTitles = [
-    { src: image1, title: 'Habitación con piscina' },
-    { src: image2, title: 'Estilo: Bob Esponja' },
-    { src: image3, title: 'Estilo: Tortugas Ninja' },
+    { src: image1, title: 'Swim-up Oceanfront King Suite' },
+    { src: image2, title: 'Swim-up Oceanfront Queen Suite' },
+    { src: image3, title: 'Swim-up Oceanfront Connecting Suite' },
+    { src: image4, title: 'The Pineapple Suite' },
+    { src: image5, title: 'The Lair Suite' },
 ];
 
 const Hotels = () => {
@@ -50,7 +54,7 @@ const Hotels = () => {
                 {imagesWithTitles.map((item, index) => (
                     <SwiperSlide key={index}>
                         <img src={item.src} alt={`Gallery item ${index + 1}`} className="w-full h-auto" />
-                        <h1 className='small-responsive-text font-bold mt-4'>{item.title}</h1>
+                        <h1 className='small-responsive-text font-bold mt-4 mr-8'>{item.title}</h1>
                     </SwiperSlide>
                 ))}
 

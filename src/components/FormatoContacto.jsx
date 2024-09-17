@@ -9,9 +9,9 @@ const FormatoContacto = () => {
             </div>
             <div className="max-w-[986px] mx-auto px-5 font-bold small-responsive-text pt-10">
                 <form>
-                    <input type="text" placeholder='Nombre' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' />
-                    <input type="text" placeholder='Teléfono' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' />
-                    <input type="text" placeholder='Correo' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' />
+                    <input type="text" placeholder='Nombre' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="name" />
+                    <input type="text" placeholder='Teléfono' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="tel-national"/>
+                    <input type="text" placeholder='Correo' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="email"/>
                     <button type='submit' className='bg-orange-500 small-responsive-text uppercase py-2 px-10 text-white flex items-center justify-center rounded-2xl'>
                         Solicitar llamada    
                     </button>

@@ -3,6 +3,7 @@ import logoImage from '../assets/logo.png';
 import { useState } from 'react';
 
 // Reusable Sidenav Component
+// eslint-disable-next-line react/prop-types
 const NavegacionLateral = ({ isOpen, toggleSideNav }) => {
     return (
         <>
