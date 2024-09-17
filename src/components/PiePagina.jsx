@@ -9,12 +9,12 @@ const PiePagina = () => {
                         <img src={logoImage} className='w-6/12 md:w-8/12 m-auto md:m-0 pb-5 md:pb-0' alt="Logo" />
                     </div>
                     <div className='text-right'>
-                        <p className='small-responsive-text'>
+                        <a href="mailto:ventas@hotelnickrivieramaya.com" className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-envelope mr-2'></span> 
-                            ventas@hotelnickrivieramaya.com</p>
-                        <p className='small-responsive-text'>
+                            ventas@hotelnickrivieramaya.com</a>
+                        <a href='tel:+529842359910' className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-phone mr-1'></span> 
-                            +52 (984) 235 99 10</p>
+                            +52 (984) 235 99 10</a>
                     </div>
                 </nav>
             </div>
