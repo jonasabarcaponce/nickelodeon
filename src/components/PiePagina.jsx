@@ -11,7 +11,7 @@ const PiePagina = () => {
                     <div className='text-right'>
                         <a href="mailto:ventas@hotelnickrivieramaya.com" className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-envelope mr-2'></span> 
-                            ventas@hotelnickrivieramaya.com</a>
+                            ventas@hotelnickrivieramaya.com</a> <br></br>
                         <a href='tel:+529843199671' className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-phone mr-1'></span> 
                             +52 (984) 319 96 71</a>
