@@ -12,9 +12,9 @@ const PiePagina = () => {
                         <a href="mailto:ventas@hotelnickrivieramaya.com" className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-envelope mr-2'></span> 
                             ventas@hotelnickrivieramaya.com</a>
-                        <a href='tel:+529842359910' className='small-responsive-text'>
+                        <a href='tel:+529843199671' className='small-responsive-text'>
                             <span className='text-orange-500 font-bold fas fa-phone mr-1'></span> 
-                            +52 (984) 235 99 10</a>
+                            +52 (984) 319 96 71</a>
                     </div>
                 </nav>
             </div>

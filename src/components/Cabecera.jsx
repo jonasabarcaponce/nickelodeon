@@ -114,12 +114,6 @@ const Cabecera = () => {
                         <div className="flex flex-row space-x-2">
                             <a
                                 href="#"
-                                className="bg-orange-500 text-2xl text-white flex items-center justify-center rounded-full min-w-12 w-12 h-12"
-                            >
-                                <i className="fab fa-whatsapp"></i>
-                            </a>
-                            <a
-                                href="#"
                                 className="bg-black text-xl text-white flex items-center justify-center rounded-full min-w-12 w-12 h-12"
                                 onClick={toggleSideNav}
                             >
