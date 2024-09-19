@@ -15,7 +15,7 @@ const FormatoContacto = () => {
             if (response.status === 200) {
                 setIsSubmitted(true);
                 localStorage.setItem('isSubmitted', 'true');
-                window.location.href = '/?confirmation=true#cotizar';
+                window.location.href = '/?confirmation=true';
             }
         } catch (error) {
             console.error('Error submitting the form', error);
