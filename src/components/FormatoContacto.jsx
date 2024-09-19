@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { useEffect } from 'react';
 
 const FormatoContacto = () => {
+
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleSubmit = async (event) => {
@@ -12,11 +14,20 @@ const FormatoContacto = () => {
             const response = await axios.post('/contact.php', formData);
             if (response.status === 200) {
                 setIsSubmitted(true);
+                localStorage.setItem('isSubmitted', 'true');
+                window.location.href = '/?confirmation=true#cotizar';
             }
         } catch (error) {
             console.error('Error submitting the form', error);
         }
     };
+
+    // Check local storage on component mount
+    useEffect(() => {
+        if (localStorage.getItem('isSubmitted') === 'true') {
+            setIsSubmitted(true);
+        }
+    }, []);
 
     return (
         <div className="bg-white text-black py-20" id="cotizar">
