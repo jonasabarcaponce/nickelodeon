@@ -1,4 +1,4 @@
-import bgImage from '../assets/bg.png';
+import bgImage from '../assets/bg-2.jpg';
 import logoImage from '../assets/logo.png';
 import { useState } from 'react';
 
@@ -103,10 +103,12 @@ const Cabecera = () => {
             <NavegacionLateral isOpen={isOpen} toggleSideNav={toggleSideNav} />
             {/* Main Header Section */}
             <div
-                className="h-screen bg-no-repeat bg-cover"
+                className="relative h-screen bg-no-repeat bg-cover bg-right sm-bg-center"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <div className="max-w-[986px] mx-auto py-10 px-5">
+                {/* Black Overlay */}
+                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="relative max-w-[986px] mx-auto py-10 px-5">
                     <nav className="flex justify-between items-center">
                         <div>
                             <img src={logoImage} className="w-6/12 md:w-8/12" alt="Logo" />
@@ -122,7 +124,7 @@ const Cabecera = () => {
                         </div>
                     </nav>
                 </div>
-                <div className="flex items-center max-w-[986px] mx-auto px-5 h-4/6 font-bold text-white">
+                <div className="relative flex items-center max-w-[986px] mx-auto px-5 h-4/6 font-bold text-white">
                     <div>
                         <h1 className="mb-3 big-responsive-text">
                             Disfruta tu vacaciones como nunca
