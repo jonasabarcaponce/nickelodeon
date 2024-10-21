@@ -12,11 +12,11 @@ import image4 from '../assets/habitaciones/slider-4.png';
 import image5 from '../assets/habitaciones/slider-5.png';
 
 const imagesWithTitles = [
-    { src: image1, title: 'Swim-up Oceanfront King Suite' },
-    { src: image2, title: 'Swim-up Oceanfront Queen Suite' },
-    { src: image3, title: 'Swim-up Oceanfront Connecting Suite' },
-    { src: image4, title: 'The Pineapple Suite' },
-    { src: image5, title: 'The Lair Suite' },
+    { src: image1, title: 'Swim-up Oceanfront King Suite', description: 'Dormitorio principal privado con baño sofá cama y balcón con acceso directo a la piscina infinita', beds: '1 King Size, 1 murphy ', people: 'Hasta 4 adultos', size: '54m2' },
+    { src: image2, title: 'Swim-up Oceanfront Queen Suite', description: 'Un suite que ofrece una sala con sofá cama, con 2 televisores, y 2 baños completos.', beds: '2 camas y 1 sofá cama', people: 'Hasta 4 adultos', size: '54m2' },
+    { src: image3, title: 'Swim-up Oceanfront Connecting Suite', description: 'Una suite con dormitorio principal privado conectada a otra con dos camas Queen.', beds: 'Depende', people: 'Hasta 4 adultos', size: '54m2' },
+    { src: image4, title: 'The Pineapple Suite', description: 'Inspirada en la casa de piña de Bob Esponja bajo el mar, esta lujosa villa es la residencia emblemática.', beds: '3 camas', people: 'Hasta 5 adultos', size: '220m2' },
+    { src: image5, title: 'The Lair Suite', description: 'El escondite subterráneo de las Tortugas Ninja nunca ha sido tan moderno y lujoso.', beds: '3 camas', people: 'Hasta 5 adultos', size: '220m2' },
 ];
 
 const Hotels = () => {
@@ -55,6 +55,12 @@ const Hotels = () => {
                     <SwiperSlide key={index}>
                         <img src={item.src} alt={`Gallery item ${index + 1}`} className="w-full h-auto" />
                         <h1 className='small-responsive-text font-bold mt-4 mr-8'>{item.title}</h1>
+                        <ul className="mt-2 font-regular text-black/90 space-y-1">
+                            <li><i className='fas fa-bed w-6'></i> {item.beds}</li>
+                            <li><i className='fas fa-expand w-6'></i> {item.size}</li>
+                            <li><i className='fas fa-people-group w-6'></i> {item.people}</li>
+                        </ul>
+                        <p className='text-black/90 mt-2'>{item.description}</p>
                     </SwiperSlide>
                 ))}
 
