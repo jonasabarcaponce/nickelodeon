@@ -8,11 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
 
-        $to = 'ventas@hotelnickrivieramaya.com'; // Replace with your actual cPanel email
+        $to = 'ventas@hotelnickriviera.com'; // Replace with your actual cPanel email
         $subject = 'Nuevo Lead';
         $body = "Nombre: $name\nCorreo: $email\nTeléfono: $phone";
         
-        $headers = "From: ventas@hotelnickrivieramaya.com\r\n"; // Replace with a valid "From" email
+        $headers = "From: ventas@hotelnickriviera.com\r\n"; // Replace with a valid "From" email
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
